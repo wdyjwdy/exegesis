@@ -1,0 +1,7 @@
+---
+layout: layout.liquid
+---
+
+{% for verse in collections.verses %}
+<a href="{{verse.url}}">{{verse.data.title}}</a>
+{% endfor %}
