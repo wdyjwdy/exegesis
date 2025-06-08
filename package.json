@@ -2,7 +2,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm exec eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy --pathprefix=/exegesis/"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.1"
