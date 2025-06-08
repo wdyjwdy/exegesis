@@ -11,6 +11,12 @@ importers:
       '@11ty/eleventy':
         specifier: ^3.1.1
         version: 3.1.1
+      markdown-it:
+        specifier: ^14.1.0
+        version: 14.1.0
+      markdown-it-github-alerts:
+        specifier: ^1.0.0
+        version: 1.0.0(markdown-it@14.1.0)
 
 packages:
 
@@ -349,6 +355,11 @@ packages:
   luxon@3.6.1:
     resolution: {integrity: sha512-tJLxrKJhO2ukZ5z0gyjY1zPh3Rh88Ej9P7jNrZiHMUXHae1yvI2imgOZtL1TO8TW6biMMKfTtAOoEJANgtWBMQ==}
     engines: {node: '>=12'}
+
+  markdown-it-github-alerts@1.0.0:
+    resolution: {integrity: sha512-RU3cbB/ewujrDpYNdyabvp4CscZ5J/3D71NWbJW+JSA0nplfutIXDMCwtGWlMLwzgBDAYkFMvYGkigq8nWOVdA==}
+    peerDependencies:
+      markdown-it: '>= 13.0.0'
 
   markdown-it@14.1.0:
     resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}
@@ -905,6 +916,10 @@ snapshots:
   list-to-array@1.1.0: {}
 
   luxon@3.6.1: {}
+
+  markdown-it-github-alerts@1.0.0(markdown-it@14.1.0):
+    dependencies:
+      markdown-it: 14.1.0
 
   markdown-it@14.1.0:
     dependencies:
