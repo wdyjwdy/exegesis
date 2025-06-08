@@ -30,3 +30,12 @@ blockquote {
     border-radius: 6px;
     background-color: #ffefef;
 }
+
+a {
+    font-size: x-large;
+    text-underline-offset: 6px;
+
+    &:hover {
+        text-decoration-line: none;
+    }
+}
